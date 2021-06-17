@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  jenkins:
+    container_name: docker-jenkins
+    image: jenkins/jenkins
+    privileged: true
+    user: root
+    ports:
+      - 8083:8080
+      - 50003:50000
